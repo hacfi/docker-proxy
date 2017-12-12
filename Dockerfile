@@ -2,7 +2,7 @@ FROM nginx
 
 RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y curl \
- && curl https://download.docker.com/linux/static/stable/x86_64/docker-17.09.0-ce.tgz -o /tmp/docker.tgz \
+ && curl https://download.docker.com/linux/static/stable/x86_64/docker-17.09.1-ce.tgz -o /tmp/docker.tgz \
  && cd tmp \
  && tar xzvf /tmp/docker.tgz \
  && mv /tmp/docker/docker /usr/bin/docker \
